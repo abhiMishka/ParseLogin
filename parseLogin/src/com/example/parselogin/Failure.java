@@ -25,8 +25,8 @@ public class Failure extends Activity implements OnClickListener {
 	@Override
 	public void onClick(View arg0) {
 		// TODO Auto-generated method stub
-		  Intent i = new Intent ("android.intent.action.SignUp");
-          startActivity(i);
+		Intent nextScreen = new Intent(getApplicationContext(), SignUp.class);            	
+  		startActivity(nextScreen);
 		
 	}
 
